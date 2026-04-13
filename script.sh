@@ -1,0 +1,7 @@
+echo "Hi"
+echo "This is a test script."
+echo "It will print some messages to the console."
+echo "$S3_ACCESS_KEY_ID"
+echo "$COPERNICUSMARINE_SERVICE_USERNAME"
+echo "$COPERNICUSMARINE_SERVICE_PASSWORD"
+echo "Script execution completed."
