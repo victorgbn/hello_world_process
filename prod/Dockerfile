@@ -7,4 +7,4 @@ WORKDIR /app
 COPY . /app
 
 # Default command to start the Python script (change script.py if needed)
-CMD ["python", "/app/script.py"]
+CMD ["python", "script.py"]
