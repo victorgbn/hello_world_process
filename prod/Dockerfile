@@ -1,7 +1,7 @@
 # Dockerfile to run your Python script (expects script.py in the build context)
 FROM python:3.11-slim
 
-WORKDIR /toto
+WORKDIR /app
 
 # Copy project files
 COPY . /app
