@@ -22,13 +22,13 @@ def print_env_varibales():
         if key not in ["S3_ACCESS_KEY_ID", "S3_SECRET_ACCESS_KEY", "COPERNICUSMARINE_SERVICE_USERNAME", "COPERNICUSMARINE_SERVICE_PASSWORD"]:
             print("%s: %s", key, value)
 
-def print_numbers_1_to_1000():
-    for i in range(1, 1001):
-        time.sleep(10)
+def print_numbers_1_to_100():
+    for i in range(1, 100):
+        # time.sleep(10)
         logger.info("Counter value: %s", i)
 
 if __name__ == "__main__":
     logger.info("Starting counter...")
     print_env_varibales()
-    # print_numbers_1_to_1000()
+    print_numbers_1_to_100()
     logger.info("Counter finished.")
