@@ -1,7 +1,10 @@
 FROM nginx:latest
 
 COPY index.html /usr/share/nginx/html/index.html
+COPY entrypoint.sh /entrypoint.sh
+
+RUN chmod +x /entrypoint.sh
 
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
+ENTRYPOINT ["/entrypoint.sh"]
